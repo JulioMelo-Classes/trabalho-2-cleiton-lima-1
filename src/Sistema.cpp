@@ -31,9 +31,21 @@ string Sistema::disconnect(int id) {
 	return "disconnect NÃO IMPLEMENTADO";
 }
 
-string Sistema::create_server(int id, const string nome) {
-	return "create_server NÃO IMPLEMENTADO";
-}
+string Sistema::create_server(int id, const string nome)  { 
+  load(); 
+ //<! Verifica se existe usuario esta logado 
+  if (loggedUsuarioId == 0) {
+  //<! se nao estiver retorna esta mensagem  
+    return "Não está conectado";
+  }
+  vector<Servidor>::iterator it;
+ //<! verifica se ja ha um servidor com mesmo nome caso não exista inicia criação de um. 
+  it = find_if(servidores.begin(), servidores.end(), [nome](Servidor servidor) {
+    return nome == servidor.getNome();
+  });
+  if (it != servidores.end()) {
+    return "ja existe um servidor com  esse nome ";
+  }
 
 string Sistema::set_server_desc(int id, const string nome, const string descricao) {
 	return "set_server_desc NÃO IMPLEMENTADO";
