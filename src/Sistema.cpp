@@ -64,7 +64,12 @@ string Sistema::remove_server(int id, const string nome) {
 }
 
 string Sistema::enter_server(int id, const string nome, const string codigo) {
-	return "enter_server NÃO IMPLEMENTADO";
+	// Condição para verificar se o usuário já está correto ou se foi inserido um id inexistente.
+	if (!usuarioLogado(id) || id == 0){
+		return "Usuário não logado ou id incorreto";
+	} 
+	// Obs: fará mais sentido quando a classe servidor for implementada
+	// Certamente da forma que está, o código provavelmente não rodará
 }
 
 string Sistema::leave_server(int id, const string nome) {

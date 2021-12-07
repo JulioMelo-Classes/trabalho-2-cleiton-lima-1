@@ -181,6 +181,13 @@ class Sistema {
 				@return uma string vazia em caso de sucesso ou uma mensagem de erro em caso de falha.
 		*/
 		std::string list_messages(int id);
+
+		/*! Verifica se o usuário está logado por meio do id
+				@param id um id válido de algum usuário cadastrado e logado no sistema.
+				@return retorna true caso o usuário esteja logado e false caso não esteja.
+		*/
+		bool usuarioLogado(int id);
+
 };
 
 #endif

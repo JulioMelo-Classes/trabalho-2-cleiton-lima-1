@@ -1,0 +1,7 @@
+.vscode
+.replit
+concordo
+**/*.o
+/html
+/latex
+/build
