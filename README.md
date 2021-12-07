@@ -1,16 +1,9 @@
-# Base para a atividade 02 de LP1
+# Atividade 02 de LP1 - Projeto Concordo
 
-Use esse esqueleto de classes para iniciar a terceira atividade.
-
-Existe um executor que faz a interpretação dos comandos e executa o método correto do sistema.
+## Sobre
+Projeto semelhante a ferramenta Discord, assimilando apenas a parte de backend da aplicação
 
 ## Para compilar
-
-Com makefiles:
-```console
-mkdir build
-make
-```
 
 Com cmake:
 ```console
@@ -19,8 +12,6 @@ cd build
 cmake ..
 cmake --build .
 ```
-
-Escolha uma das duas formas de build e ignore a outra.
 
 ## Para executar
 Você pode rodar o sistema e em logo depois digitar os comandos seguidos de ENTER
