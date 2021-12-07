@@ -31,8 +31,11 @@ string Sistema::disconnect(int id) {
 	return "disconnect NÃO IMPLEMENTADO";
 }
 
+//checkin 2
+//vou considerar 0.1 pelo esforço, mas realmente não teve muita mudança
+//para poder testar o checkin 2 vc precisava ao menos ter feito o 1.
 string Sistema::create_server(int id, const string nome)  { 
-  load(); 
+  load(); //esse método?
  //<! Verifica se existe usuario esta logado 
   if (loggedUsuarioId == 0) {
   //<! se nao estiver retorna esta mensagem  
