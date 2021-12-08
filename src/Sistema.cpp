@@ -5,18 +5,31 @@
 
 using namespace std;
 
-#include "Sistema.h"
-#include <iostream>
-#include <sstream>
-#include <algorithm>
-
 /* COMANDOS */
 string Sistema::quit() {
   return "Saindo...";
 }
 
 string Sistema::create_user (const string email, const string senha, const string nome) {
-	return "create_user NÃO IMPLEMENTADO";
+	// Valida se todos os campos foram inseridos 
+	if(email == "" || senha == "" || nome == "")
+		return "Preencha todos os campos por favor, pois são todos obrigatórios";
+
+	// Verifica se o formato do email está correto
+	// Adicionar experssão regular
+	// Regex^ emailregex = gcnew Regex("(?<user>[^@]+)@(?<host>.+)"); - Ver com o professor se necessita usar tal expressão 
+
+	// Checar se já existe o email
+	vector<Usuario>::iterator i;
+	for(i = usuarios.begin(); i != usuarios.end(); i++){
+		if(i->getEmail() == email) return "Esse email já consta no cadastro";
+	}
+
+	// Inserir um novo usuário no sistema, tendo em vista que será descartado o id = 0
+	Usuario usuario(id, email, senha, nome);
+	usuarios.push_back(usuario);
+
+	return "Usuário do id = " + to_string(id) + " foi criado com sucesso!";
 }
 
 std::string Sistema::delete_user (const std::string email, const std::string senha){
