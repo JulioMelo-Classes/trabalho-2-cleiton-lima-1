@@ -10,6 +10,8 @@ string Sistema::quit() {
   return "Saindo...";
 }
 
+//checkin 3, vou considerar 0.1 mas ainda tem muito trabalho pra fazer
+//voces não atualizaram Sistema.h com a lista de usuários nem fizeram geração de ids
 string Sistema::create_user (const string email, const string senha, const string nome) {
 	// Valida se todos os campos foram inseridos 
 	if(email == "" || senha == "" || nome == "")
@@ -18,6 +20,7 @@ string Sistema::create_user (const string email, const string senha, const strin
 	// Verifica se o formato do email está correto
 	// Adicionar experssão regular
 	// Regex^ emailregex = gcnew Regex("(?<user>[^@]+)@(?<host>.+)"); - Ver com o professor se necessita usar tal expressão 
+	// Professor: não precisa :)
 
 	// Checar se já existe o email
 	vector<Usuario>::iterator i;
