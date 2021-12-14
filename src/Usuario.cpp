@@ -1,15 +1,17 @@
-#include "usuario.h"
+#include <iostream>
+#include "Usuario.h"
 
 using namespace std;
 
+/*!incializa os atributos id, nome, email e senha com valores nulos*/
 Usuario::Usuario() {
   id = 0;
   nome = "";
   email = "";
   senha = "";
 }
-
-Usuario::Usuario(const int pid, const string nome, const string pemail, const string psenha) {
+/*! Inicializador de  atributos com os valores do parâmetro */
+Usuario::Usuario(const int pid, const string pnome, const string pemail, const string psenha) {
   id = pid;
   nome = pnome;
   email = pemail;
