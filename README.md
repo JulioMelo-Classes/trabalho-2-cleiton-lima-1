@@ -45,3 +45,12 @@ delete-user tonin@gmail.com super234
 delete-user tonin@gmail.com super234
 “Usuário não cadastrado!”
 
+#### **dificuldades_itens_nao_implementados**
+_limitações_
+
+*tempo
+*indetação 
+*computador_porparte_jean
+*modelagem_De_problema
+
+
