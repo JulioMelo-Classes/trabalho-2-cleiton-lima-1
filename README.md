@@ -26,7 +26,7 @@ cd build
 ./concordo < ../data/script_comandos.txt
 ```
 #### **create-user**
-Cria um novo usaario, caso não exista nenhum com o mesmo nome. deve ser informado e-mail e senha,Caso consiga, deve emitir um texto informando que o usuário foi inserido com sucesso.  
+Cria um novo usuario, caso não exista nenhum com o mesmo nome. deve ser informado e-mail e senha,Caso consiga, deve emitir um texto informando que o usuário foi inserido com sucesso.  
 
 _Exemplo de entrada/saída:_
 ```
