@@ -29,22 +29,33 @@ cd build
 Cria um novo usaario, caso não exista nenhum com o mesmo nome. deve ser informado e-mail e senha,Caso consiga, deve emitir um texto informando que o usuário foi inserido com sucesso.  
 
 _Exemplo de entrada/saída:_
+```
 create-user tonin@gmail.com super234 tonho
 “Usuário criado”
 
 create-user tonin@gmail.com super234 tonho
 “Usuário já existe!”
-
+```
 
 #### **delete_user**
 _Exemplo de entrada/saída:_
-
+```
 delete-user tonin@gmail.com super234
 “Usuário removido”
 
 delete-user tonin@gmail.com super234
 “Usuário não cadastrado!”
 
+```
+#### **creat_server**
+_Exemplo de entrada/saída:_
+```
+create-server 1 minha-casa
+“Servidor criado”
+
+create-server 1 minha-casa
+“Servidor com esse nome já existe”
+```
 #### **dificuldades_itens_nao_implementados**
 _limitações_
 
@@ -52,7 +63,7 @@ _limitações_
 
 *indetação 
 
-*computador_porparte_jean
+*computador_por_parte_jean
 
 *modelagem_De_problema
 
