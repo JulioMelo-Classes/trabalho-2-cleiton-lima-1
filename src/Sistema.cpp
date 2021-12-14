@@ -1,4 +1,5 @@
 #include "Sistema.h"
+#include "Usuario.h"
 #include <iostream>
 #include <sstream>
 #include <algorithm>
