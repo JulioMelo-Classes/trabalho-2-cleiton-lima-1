@@ -1,24 +1,29 @@
 #ifndef CANAL_TEXTO_H
 #define CANAL_TEXTO_H
 
+#include <iostream>
 #include <vector>
-#include "mensagem.h"
-#include "canal.h"
+#include "Mensagem.h"
+#include "Usuario.h"
+
 
 
 // classe representante de canaltexto 
-class CanalTexto : public Canal {
+class CanalTexto {
   private:
-    std::vector<Mensagem> mensagens; 
+    int id;
+    std::string nome;
+    std::vector<Mensagem> mensagens; //<! vetor que Lista de mensagens de texto. 
+    std::string dono;
+  
   public:
-    CanalTexto(std::string nome); 
-    ~CanalTexto(); 
+    CanalTexto(std::string nome); //<! Constructor de CanalTexto 
+    ~CanalTexto(); //<! Destrutor de CanalTexto
 
-    tipoCanal  getTipo(); 
-    std::vector<Mensagem> getMensagens(); 
+    std::vector<Mensagem> getMensagens(); //<! retorna o vetor de mensagens
 
-    void addMensagem(Mensagem novaMensagem); 
-    std::string printMensagens(std::vector<Usuario> usuarios); 
+    void addMensagem(Mensagem novaMensagem); //<! Adiciona uma nova mensagem a lista
+    std::string printMensagens(std::vector<Usuario> usuarios); //<! Retorna a lista de mensagens formatadas em string
     
 };
 
