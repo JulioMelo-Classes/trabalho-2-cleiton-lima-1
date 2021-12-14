@@ -20,6 +20,10 @@ Preencha os dados abaixo para identificar a autoria do trabalho.
 - [x] concertar.h 
 - [x] utilizar metodos certos de commits
 - [x] atualizar autor.md
+- [x] fixar usario.cpp.
+- [x] remover tipocanal.
+
+
 
 --------
 &copy; DIMAp/IMD/UFRN 2021.
