@@ -49,8 +49,14 @@ delete-user tonin@gmail.com super234
 _limitações_
 
 *tempo
+
 *indetação 
+
 *computador_porparte_jean
+
 *modelagem_De_problema
+
+*implementar_funcoes
+
 
 
