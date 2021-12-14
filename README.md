@@ -61,8 +61,6 @@ _limitações_
 
 *tempo
 
-*indetação 
-
 *computador_por_parte_jean
 
 *modelagem_De_problema
