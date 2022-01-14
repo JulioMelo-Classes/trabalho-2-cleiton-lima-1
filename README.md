@@ -69,3 +69,40 @@ _limitações_
 
 
 
+# Avaliação
+## Funcionalidades
+- A1.2 50%
+Como você implementou a classe usuário e parte do método vou considerar 50%.
+- A1.3 nok
+- A1.4 nok
+- A2.1 nok
+- A2.2 10%
+Como a classe servidor não está implementada, mas parte do método está vou considerar 10%.
+- A2.3 nok
+- A2.4 nok
+- A2.5 nok
+- A2.6 nok
+- A2.7 nok
+- A2.8 nok
+- A2.9 nok
+- B1.1 nok
+- B1.2 nok
+- B1.3 nok
+- B1.4 nok
+- B1.5 nok
+- B2.1 nok
+- B2.2 nok
+
+## Classes
+- Servidor nok
+não implementada
+- Canal ok
+- Mensagem ok
+
+## Boas Práticas
+- Documentação 10%
+Algumas classes/métodos estão documentadas outras não estão
+- Testes nok
+- Organização ok
+
+## Observações
